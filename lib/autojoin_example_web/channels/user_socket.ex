@@ -32,4 +32,6 @@ defmodule AutojoinExampleWeb.UserSocket do
   # Returning `nil` makes this socket anonymous.
   @impl true
   def id(_socket), do: nil
+
+  def autojoin_topics(_socket), do: ["system"]
 end
